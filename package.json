@@ -1,6 +1,6 @@
 {
   "name": "electron-splash-guard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Splash screen + guarded bootstrap + crash UI for Electron apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
