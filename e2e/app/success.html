@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Test App</title></head>
+<body>
+  <h1 id="app-title">App Loaded Successfully</h1>
+  <script>
+    // Signal readiness via IPC
+    const { ipcRenderer } = require('electron');
+    ipcRenderer.send('app-ready');
+  </script>
+</body>
+</html>
