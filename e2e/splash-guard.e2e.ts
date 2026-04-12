@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { _electron as electron, type ElectronApplication, type Page } from 'playwright';
+import { _electron as electron, type ElectronApplication } from 'playwright';
 import * as path from 'path';
-import { execSync, spawn } from 'child_process';
+import { spawn } from 'child_process';
 
 const electronPath = require('electron') as unknown as string;
 const appDir = path.join(__dirname, 'app');

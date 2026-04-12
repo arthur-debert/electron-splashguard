@@ -17,7 +17,6 @@ import { defaultHeadlessDetect } from './headless';
 import { resolveDismissPolicy } from './dismiss';
 import { resolveSplashHTML } from './splash-html';
 import { buildErrorPageHTML } from './error-html';
-import { formatErrorForClipboard } from './error-format';
 
 export class SplashGuard {
   private config: SplashGuardConfig;

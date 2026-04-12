@@ -1,4 +1,4 @@
-import type { ErrorConfig, ErrorContext, GitHubIssueConfig } from './types';
+import type { ErrorConfig, ErrorContext } from './types';
 import { formatErrorForClipboard, buildGitHubIssueURL } from './error-format';
 
 export function buildErrorPageHTML(

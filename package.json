@@ -4,15 +4,25 @@
   "description": "Splash screen + guarded bootstrap + crash UI for Electron apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "npx playwright test",
-    "lint": "eslint src/"
+    "lint": "eslint src/ test/ e2e/splash-guard.e2e.ts",
+    "check": "./scripts/check.sh",
+    "prepare": "./scripts/install-hooks.sh"
   },
-  "keywords": ["electron", "splash", "splash-screen", "error-handling", "crash"],
+  "keywords": [
+    "electron",
+    "splash",
+    "splash-screen",
+    "error-handling",
+    "crash"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "electron": ">=30.0.0"
@@ -24,6 +34,7 @@
     "eslint": "^9.0.0",
     "playwright": "^1.52.0",
     "typescript": "^5.8.0",
+    "typescript-eslint": "^8.58.1",
     "vitest": "^3.1.0"
   }
 }
