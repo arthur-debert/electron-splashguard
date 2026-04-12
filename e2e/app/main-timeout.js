@@ -18,6 +18,7 @@ app.whenReady().then(async () => {
       timeoutMs: 1500,
       browserWindowOptions: { width: 600, height: 400 },
     },
+    headless: { detect: () => false }, // force GUI even on CI
     errors: {
       title: 'Timeout Error',
       copyToClipboard: true,

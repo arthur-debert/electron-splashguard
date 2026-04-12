@@ -16,6 +16,7 @@ app.whenReady().then(async () => {
       timeoutMs: 10000,
       browserWindowOptions: { width: 600, height: 400 },
     },
+    headless: { detect: () => false }, // force GUI even on CI
     errors: {
       title: 'Uncaught Exception',
       copyToClipboard: true,

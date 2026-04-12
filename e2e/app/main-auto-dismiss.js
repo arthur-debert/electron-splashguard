@@ -15,6 +15,7 @@ app.whenReady().then(async () => {
       readySignal: 'never-sent',
       timeoutMs: 1000,
     },
+    headless: { detect: () => false }, // force GUI even on CI
     errors: {
       title: 'Auto Dismiss Test',
       dismiss: { mode: 'auto', afterMs: 2000 },
