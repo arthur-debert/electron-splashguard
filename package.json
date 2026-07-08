@@ -30,11 +30,11 @@
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.0.0",
-    "electron": "^35.0.0",
+    "electron": "^39.8.5",
     "eslint": "^9.0.0",
     "playwright": "^1.52.0",
     "typescript": "^5.8.0",
     "typescript-eslint": "^8.58.1",
-    "vitest": "^3.1.0"
+    "vitest": "^4.1.0"
   }
 }
